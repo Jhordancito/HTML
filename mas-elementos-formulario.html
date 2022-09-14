@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+<!--
+    fieldest -> Se utiliza para agrupar elementos dentro de un formulario
+    legend -> Representa una etiqueta para el contenido del fieldset
+    file -> Este input se utiliza para cargar archivos y enviarlos desde un formulario
+    meter -> Representa un valor dentro de un rango conocido
+    progress -> Representa el progreso de una tarea
+    textarea -> Se utiliza oara introducir texto en un formulario
+-->
+<body>
+    <form>
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="name">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="surname">
+        </fieldset>
+        <input type="file"><br>
+        <label for="fuel">Combustible</label>
+        <meter id="fuel" min="0" max="100" value="60" low="30" high="75"></meter>
+        <label for="task">Tarea 1</label>
+        <progress id="task" max="100" value="10"></progress><br>
+        <label for="message">Mensaje</label>
+        <textarea name="" id="message" cols="40" rows="5"></textarea>
+    </form>
+</body>
+</html>

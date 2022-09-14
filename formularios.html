@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Estructura de Formulario</title>
@@ -12,13 +12,76 @@
     input -> Sirve para crear un campo que permitirá al usuario interactuar
     button -> Crea un botón que permitirá enviar el formulario 
 -->
+<!--
+    input type:
+        button -> Se comporta igual que un botón <button>
+        submit -> Se utiliza para introducir números telefonicos
+        hidden -> Campo oculto, puede contener calor pero no se mostrará
+        date: -> Se utiliza para introducir una fecha
+        datetime-local -> fecha y hora, no funciona en firefox
+        month -> Se utiliza para el mes
+        time -> Se utiliza para introducir una hora
+        week -> Se utiliza para introducir el número de semana del año
 
+        search -> Se utiliza para las barras de búsqueda
+        tel -> Se utiliza para introducir una hora
+        email -> Se utiliza para introducir un email
+        password -> Se utiliza para contraseñas
+        url -> Se utiliza para introducir URLs
+        
+        color: -> Se utiliza para especificar un color
+        number: -> Se utiliza para valores numéricos
+        range -> Se utiliza para establecer un rango
+        reset -> Se utiliza para resetear el formulario
+        text -> Valor por defecto
+-->
 <body>
-
+<!--
     <form>
-        <label>Nombre</label>
-        <input>
+        <label for="name">Nombre</label>
+        <input id="name">
         <button>Enviar Formulario</button>
     </form>
+-->
+    <form>
+        <input type="color">
+        <input type="number">
+        <input type="range" step="4" min="0" max="20">
+        <input type="reset">
+        <input type="text">
+        <input type="submit" value="Enviar">
+        <input type="date">
+        <input type="datetime-local">
+        <input type="time">
+        <input type="month">
+    </form>
+
+<!--
+    <form>
+        <div>
+            <label> search 
+                <input type="search"><br>
+            </label>
+        </div>
+        <div>
+            <label> tel
+                <input type="tel">
+            </label>
+        </div>
+        <div>
+            <label> email
+                <input type="email">
+            </label><br>
+        </div>
+            <label> password
+                <input type="password">
+            </label>
+        <div>
+            <label> url
+                <input type="url">
+            </label><br>
+        </div>
+    </form>
+-->
 </body>
 </html>
