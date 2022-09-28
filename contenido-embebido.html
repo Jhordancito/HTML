@@ -5,9 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Contenido Embebido</title>
 </head>
+<!--
+    DPR (Device Pixel Ratio)
+        Es la relación que existe entre los píxeles reales que tiene el dispositivo y los píxeles
+        que tenemos disponibles para "pintar" contenido
 
+    DPR = pixeles reales / pixeles disponibles
+-->
 <body>
     <h1>Contenido embebido</h1>
-        <img src="assets/images/gatito.jpg" alt="Pikachu bailando">
+        <img src="assets/images/gatito.jpg" width="300" alt="Pikachu bailando">
+
+    <!--
+        <img srcset=" imagen.webp, imagen.jpg, imagen-mobile.webp 2x" //para que cambie la imagen en el mobil 
+        
+        o TAMBIEN!!
+
+        <picture>
+            <source srcset="imagen.webp, imagen.jpg" media="(max-width: 1200px)">
+            <img src="imagen.jpg" alt=""> //Imagen de respaldo si o si
+        </picture>
+    -->
+
 </body>
 </html>
